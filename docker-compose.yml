@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  angular-service:
+    image: manojishere/angular_on_nginx:v1
+    build:
+      context: .
+    container_name: angular_nginx_container
+    ports:
+      - '8000:80'
+    
+
+
